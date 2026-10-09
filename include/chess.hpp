@@ -1,3 +1,5 @@
+#pragma once
+
 #include <cstddef>
 #include <iostream>
 #include <vector>
@@ -15,25 +17,11 @@ enum class Piece {
     KING = 6,
 };
 
-int temp();
-
 class Board
 {
 public:
-    Board()
-    {
-        pieces.resize(8, std::vector<Piece>(8, Piece::EMPTY));
-    }
-
-    void Draw()
-    {
-        for (const auto& row : pieces) {
-            for (Piece piece : row) {
-                std::cout << static_cast<int>(piece) << ' ';
-            }
-            std::cout << '\n';
-        }
-    }
+    Board();
+    void Draw();
 
 private:
     std::vector<std::vector<Piece>> pieces;

@@ -2,7 +2,8 @@
 
 int main()
 {
-    chess::temp();
+    chess::Board board;
+    board.Draw();
 
     return 0;
 }

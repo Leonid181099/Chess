@@ -5,3 +5,5 @@ target_sources(chess
     PRIVATE 
         src/chess.cpp
         src/main.cpp)
+
+target_compile_features(chess PRIVATE cxx_std_20)

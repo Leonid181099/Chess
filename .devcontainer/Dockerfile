@@ -6,4 +6,6 @@ RUN apt update \
         cmake \
         g++ \
         git \
-        make
+        make \
+        ssh \
+        vim
