@@ -1,0 +1,20 @@
+{
+    "name": "chess",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.makefile-tools",
+                "xaver.clang-format"
+            ],
+            "settings": {
+                "C_Cpp.formatting": "clangFormat",
+                "C_Cpp.clang_format_style": "file:${workspaceFolder}/.clang-format",
+                "clang-format.executable": "clang-format"
+            }
+        }
+    }
+}
